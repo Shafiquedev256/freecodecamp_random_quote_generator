@@ -84,7 +84,9 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className={`min-h-screen flex items-center justify-center ${bgColor}`}>
+    <div
+      className={`min-h-screen flex space-y-8 flex-col items-center justify-center ${bgColor}`}
+    >
       <div className='max-w-md p-8 bg-white rounded-lg shadow-lg'>
         <blockquote className='text-2xl italic'>{currentQuote.text}</blockquote>
         <p className='text-lg mt-4'>- {currentQuote.author}</p>
@@ -95,6 +97,9 @@ const App: React.FC = () => {
           Generate Quote
         </button>
       </div>
+      <footer className='font-medium '>
+        Designed and Created by Musinguzi Shafiq @2024
+      </footer>
     </div>
   );
 };
