@@ -97,8 +97,14 @@ const App: React.FC = () => {
           Generate Quote
         </button>
       </div>
-      <footer className='font-medium '>
-        Designed and Created by Musinguzi Shafiq @2024
+      <footer className='font-medium flex flex-row space-x-4'>
+        <span>Designed and Created by Musinguzi Shafiq @2024</span>
+        <a
+          href='https://github.com/Shafiquedev256/freecodecamp_random_quote_generator'
+          className='text-black underline'
+        >
+          view code
+        </a>
       </footer>
     </div>
   );
